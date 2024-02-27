@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Default Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 추가적인 head 섹션 내용 -->    
+    <link rel="stylesheet" th:href="@{/css/captcha.css}"/>
+    <link rel="stylesheet" th:href="@{/css/history.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    <script th:src="@{/js/bootstrap.bundle.js}" defer></script>
+    <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+    <script th:src="@{/js/script.js}" defer></script>
+    <!-- 검색등록 -->
+    <meta name="google-site-verification" content="11PtDQuTUlYrE3w_CJtFFlAk-a0B-roPsHYAN8hL4q0" />
+    <meta name="naver-site-verification" content="7a67781ae88a50ba6f577e4658c03ae9c57096d1" />
+</head>
+<body>
+    <header>
+        <div th:replace="fragments/header-eng :: header"></div>
+    </header>
+
+    <section>
+	    <div th:replace="fragments/sub-banner-eng :: section"></div>
+	</section>
+	
+	<!-- title 값에 따른 섹션 표시 내용 -->
+    <section th:if="${title == 'Company'}">
+	    <div th:include="fragments/company-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'Greetings'}">
+	    <div th:include="fragments/greetings-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'History'}">
+	    <div th:include="fragments/history-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'Location'}">
+	    <div th:include="fragments/location-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'Business'}">
+	    <div th:include="fragments/business-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'WhatIsESC'}">
+	    <div th:include="fragments/what_is_esc-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'PR'}">
+	    <div th:include="fragments/pr-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'Contact'}">
+	    <div th:include="fragments/contact-content-eng :: section"></div>
+	</section>
+	<section th:if="${title == 'Recruit'}">
+	    <div th:include="fragments/recruit-content-eng :: section"></div>
+	</section>
+
+    <footer>
+        <div th:replace="fragments/footer-eng :: footer"></div>
+    </footer>
+</body>
+</html>

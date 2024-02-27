@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+			      <a th:href="@{/company-eng.do}"><button type="button" id="select-button" class="btn btn-secondary custom-btn">Company</button></a>
+			    </div>
+				<div class="col">
+			      <a th:href="@{/greetings-eng.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">Greetings</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/history-eng.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">History</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/pr-eng.do}"><button type="button" id="none-select-button" class="btn btn-primary custom-btn">PR</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/location-eng.do}"><button type="button" id="none-select-button" class="btn btn-primary custom-btn">Location</button></a>
+			    </div>
+			</div>
+			</br>
+			Company Information
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/company_img.png}" alt="company_img">
+				</div>
+				<div id="box-right">
+					<p class="title">DT ENG INC.</p>
+	
+						<h3>9 Years of Expertise | Annual Revenue USD 23,499,000</h3>
+						<hr>
+						<p class="body-text">
+							Established : July 6, 2016<br> 
+							CEO : KWANG RO, GO<br> 
+							Industry: Semiconductor Manufacturing Machinery Manufacturing<br> 
+							Business Activities: Manufacturing of semiconductor equipment components, liquid crystal display devices, insulating materials, and electronic products<br>
+							Technological Assets:<br> 
+							Patent - Insulation resistance excellent electrostatic chuck (2021)<br> 
+							Patent - Repair method of electrostatic chuck (2020)<br> 
+							Patent - Electrostatic chuck including film-type bonding layer with hole (2022)<br> 
+							Patent - Filling method of adhesive layer of electrostatic chuck (2021)<br> 
+							ISO 9001 - Production of semiconductor equipment components (electrostatic chuck for wafers)<br> 
+						</p>
+				</div>
+			</div>
+	</section>
+</body>
+</html>

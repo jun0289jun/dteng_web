@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Default Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 추가적인 head 섹션 내용 -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    <script th:src="@{/js/bootstrap.bundle.js}" defer></script>
+    <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+    <script th:src="@{/js/script.js}" defer></script>
+    <!-- 검색등록 -->
+    <meta name="google-site-verification" content="11PtDQuTUlYrE3w_CJtFFlAk-a0B-roPsHYAN8hL4q0" />
+    <meta name="naver-site-verification" content="7a67781ae88a50ba6f577e4658c03ae9c57096d1" />
+</head>
+<body>
+    <header>
+		<div th:replace="fragments/header-eng :: header"></div>
+    </header>
+
+    <section>
+	    <div th:replace="fragments/main-banner-eng :: section"></div>
+	</section>
+
+    <footer>
+		<div th:replace="fragments/footer-eng :: footer"></div>
+    </footer>
+</body>
+</html>

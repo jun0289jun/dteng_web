@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="subbanner">
+		    <img th:src="@{/img/sub_banner.jpg}" alt="sub_banner">
+		    <div class="sub-text" th:if="${title == 'Company'}">기업정보</div>
+		    <div class="sub-text" th:if="${title == 'Greetings'}">기업정보</div>
+		    <div class="sub-text" th:if="${title == 'History'}">기업정보</div>
+		    <div class="sub-text" th:if="${title == 'PR'}">기업정보</div>
+		    <div class="sub-text" th:if="${title == 'Location'}">기업정보</div>
+		    <div class="sub-text" th:if="${title == 'Business'}">사업소개</div>
+		    <div class="sub-text" th:if="${title == 'WhatIsESC'}">사업소개</div>
+		    <div class="sub-text" th:if="${title == 'Contact'}">고객지원</div>
+		    <div class="sub-text" th:if="${title == 'Recruit'}">채용안내</div>
+		</div>
+		<div>
+			<div class="breadcrumbs" th:if="${title == 'Company'}">메인 > 기업정보</div>
+			<div class="breadcrumbs" th:if="${title == 'Greetings'}">메인 > 기업정보 > 인사말</div>
+			<div class="breadcrumbs" th:if="${title == 'History'}">메인 > 기업정보 > 연혁</div>
+			<div class="breadcrumbs" th:if="${title == 'PR'}">메인 > 기업정보 > PR</div>
+			<div class="breadcrumbs" th:if="${title == 'Location'}">메인 > 기업정보 > 오시는 길</div>
+			<div class="breadcrumbs" th:if="${title == 'Business'}">메인 > 제품소개</div>
+			<div class="breadcrumbs" th:if="${title == 'WhatIsESC'}">사업소개 > ESC란</div>
+			<div class="breadcrumbs" th:if="${title == 'Contact'}">메인 > 고객지원</div>
+			<div class="breadcrumbs" th:if="${title == 'Recruit'}">메인 > 채용안내</div>
+		</div>
+	</section>
+</body>
+</html>

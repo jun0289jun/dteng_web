@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div>
+			<!-- 캡차 이미지 표시 -->
+			<img th:src="${'data:image/png;base64,' + imageResult}" alt="captcha image">
+			
+			<form action="/captcha-image-load-eng.do" method="get">
+		        <!-- imageResult 정보 전달용 -->
+		        <input type="submit" value="Change Image" style="width:300px; height:35px; border: none; color: #ffffff; background-color: #578ABB;">
+		    </form>
+		</div>
+	</section>
+</body>
+</html>

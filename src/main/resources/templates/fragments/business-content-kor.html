@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+                    <a th:href="@{/business-kor.do}"><button type="button" id="select-button-business" class="btn btn-secondary custom-btn">사업소개</button></a>
+                </div>
+				<div class="col">
+					<a th:href="@{/what_is_esc-kor.do}"><button type="button" id="none-select-button-business"class="btn btn-secondary custom-btn">ESC란</button></a>
+				</div>
+			</div>
+			</br>
+			사업소개
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/business-process-kor.png}" alt="business-process">
+				</div>
+				<div id="box-right">
+					<p class="title">ESC(Electrostatic Chuck) Repair</p>
+				
+					<h3>Heater bonding | Plate De-bonding</h3>
+					<hr>
+					<p class="body-text">(주)동탄이엔지는 총 20개의 세부 단계로 구성된 작업표준서를 기준으로 체졔적인 작업프로세스를 수행합니다. 이를 도식화한 Repair 표준 프로세스입니다.</p>
+					<table class="align-center-table">
+						<tr>
+							<th>Process No.</th>
+							<th>Plate Type</th>
+							<th>Coating Type</th>
+						</tr>
+						<tr>
+							<td>0단계</td>
+							<td colspan="2"><b>제품 입고 :</b> 입고 제품의 확인</td>
+						</tr>
+						<tr>
+							<td>1단계</td>
+							<td colspan="2"><b>손상정도 분석 및 평가 / Plate Type 결정 : </b>제품의 손상 정도를 분석 및 평가하고 Plate Type에 따른 공정계획 수립</td>
+						</tr>
+						<tr>
+							<td>2단계</td>
+							<td><b>플레이트 디본딩 : </b>본딩 결합부의 해제</td>
+							<td><b>코팅 박리 : </b>기존 코팅 박리진행</td>
+				
+						</tr>
+						<tr>
+							<td>3단계</td>
+							<td><b>플레이트 본딩 : </b>플레이트 결합부의 본딩</td>
+							<td><b>용사 코팅 : </b>신규 용사 코팅 적용</td>
+						</tr>
+						<tr>
+							<td>4단계</td>
+							<td colspan="2"><b>제품 가공 : </b>가공을 통해 적정 공정의 조건을 구성</td>
+						</tr>
+						<tr>
+							<td>5단계</td>
+							<td colspan="2"><b>패턴 형성 : </b>정전척의 기능적 패턴 형성</td>
+						</tr>
+						<tr>
+							<td>6단계</td>
+							<td colspan="2"><b>제품 세정 : </b>불순물이나 이물질 제거</td>
+						</tr>
+						<tr>
+							<td>7단계</td>
+							<td colspan="2"><b>제품 검증 및 평가 : </b>품질을 검증하고 표준 부합 여부를 체크</td>
+						</tr>
+						<tr>
+							<td>8단계</td>
+							<td colspan="2"><b>제품 포장 : </b>완성 제품 포장</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</section>
+</body>
+</html>

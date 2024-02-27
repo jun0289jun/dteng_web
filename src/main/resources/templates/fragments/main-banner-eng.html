@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+        <div id="mainbanner">
+			<div class="slider-container">
+		        <div class="slider">
+		            <div class="slide">
+		                <img th:src="@{/img/main_banner_01.jpg}" alt="main_banner1">
+		                <div class="text">"High Precision"</div>
+		            </div>
+		            <div class="slide">
+		                <img th:src="@{/img/main_banner_02.jpg}" alt="main_banner2">
+		                <div class="text">"Reliability of Quality"</div>
+		            </div>
+		            <div class="slide">
+		                <img th:src="@{/img/main_banner_03.jpg}" alt="main_banner3">
+		                <div class="text">"Systematic Process"</div>
+		            </div>
+		        </div>
+				<div id="itams-container">
+					<div id="itams-left">
+						<a href="/company-eng.do"><img th:src="@{/img/company.png}" alt="itams"></a>
+						<div class="itams-text">Company Information</div>
+					</div>
+					<div id="itams">
+						<a href="/business-eng.do"><img th:src="@{/img/business.png}" alt="itams"></a>
+						<div class="itams-text">Business Introduction</div>
+					</div>
+					<div id="itams-right">
+						<a href="/contact-eng.do"><img th:src="@{/img/contact.png}" alt="itams"></a>
+						<div class="itams-text">Customer Support</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+	</section>
+</body>
+</html>

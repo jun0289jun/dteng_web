@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="subbanner">
+		    <img th:src="@{/img/sub_banner.jpg}" alt="sub_banner">
+		    <div class="sub-text" th:if="${title == 'Company'}">Company</div>
+		    <div class="sub-text" th:if="${title == 'Greetings'}">Company</div>
+		    <div class="sub-text" th:if="${title == 'History'}">Company</div>
+		    <div class="sub-text" th:if="${title == 'PR'}">Company</div>
+		    <div class="sub-text" th:if="${title == 'Location'}">Company</div>
+		    <div class="sub-text" th:if="${title == 'Business'}">Business</div>
+		    <div class="sub-text" th:if="${title == 'WhatIsESC'}">Business</div>
+		    <div class="sub-text" th:if="${title == 'Contact'}">Contact</div>
+		    <div class="sub-text" th:if="${title == 'Recruit'}">Recruit</div>
+		</div>
+		<div>
+			<div class="breadcrumbs" th:if="${title == 'Company'}">Main > Company</div>
+			<div class="breadcrumbs" th:if="${title == 'Greetings'}">Main > Company > Greetings</div>
+			<div class="breadcrumbs" th:if="${title == 'History'}">Main > Company > History</div>
+			<div class="breadcrumbs" th:if="${title == 'PR'}">Main > Company > PR</div>
+			<div class="breadcrumbs" th:if="${title == 'Location'}">Main > Company > Location</div>
+			<div class="breadcrumbs" th:if="${title == 'Business'}">Main > Business</div>
+			<div class="breadcrumbs" th:if="${title == 'WhatIsESC'}">Main > What is ESC</div>
+			<div class="breadcrumbs" th:if="${title == 'Contact'}">Main > Contact</div>
+			<div class="breadcrumbs" th:if="${title == 'Recruit'}">Main > Recruit</div>
+		</div>
+	</section>
+</body>
+</html>

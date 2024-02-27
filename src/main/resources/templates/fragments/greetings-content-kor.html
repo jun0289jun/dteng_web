@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+			      <a th:href="@{/company-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">기업정보</button></a>
+			    </div>
+				<div class="col">
+			      <a th:href="@{/greetings-kor.do}"><button type="button" id="select-button" class="btn btn-secondary custom-btn">인사말</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/history-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">연혁</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/pr-kor.do}"><button type="button" id="none-select-button" class="btn btn-primary custom-btn">PR</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/location-kor.do}"><button type="button" id="none-select-button" class="btn btn-primary custom-btn">오시는 길</button></a>
+			    </div>
+			</div>
+			</br>
+			인사말
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/greetings.png}" alt="greetings">
+				</div>
+				<div id="box-right">
+					<p class="title">고객과의 신뢰를 최우선으로 고객과 함께 성장하겠습니다.<br>
+					언제나 힘이되는 가족처럼, 든든한 동반자가 되겠습니다.</p>
+					<hr>
+					<p class="body-text">
+						(주)동탄이엔지는 급변하는 산업환경과 요구에 대응하기 위하여 현실에 안주하지 않고 끊임없이 노력하고 있습니다.<br>Technology Innovation을 통해 빠르고 정확한 고객 지원이 가능합니다.<br>ESC 품질에 대한 어려움이 있다면 저희와 함께 하십시오.<br> 
+						<br>
+						늘 고객의 시선에서 함께 하겠습니다.<br>
+						많은 관심과 성원 부탁드립니다.<br>
+						감사합니다.<br>
+						<br>
+						<br>
+						<br>
+						- (주)동탄이엔지 임직원 일동<br>
+						<br>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

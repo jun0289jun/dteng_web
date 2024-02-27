@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+    <header>
+        <div id="header">
+			<div id="logo-box">
+				<a th:href="@{/index-kor.do}"><img th:src="@{/img/DTENG_LOGO(1500px).png}" alt="logo"></a>
+			</div>
+			<div id="nav-box">
+				<ul>
+					<li><a th:href="@{/company-kor.do}">기업정보</a></li>
+					<li><a th:href="@{/business-kor.do}">사업소개</a></li>
+					<li><a th:href="@{/contact-kor.do}">고객지원</a></li>
+					<li><a th:href="@{/recruit-kor.do}">채용안내</a></li>
+				</ul>
+			</div>
+			<div id="lang-box">
+				<ul>
+					<li id="lang-box-on"><a th:href="@{/index-kor.do}">KOR</a></li> 
+					<li> | </li>
+					<li id="lang-box-off"><a th:href="@{/index-eng.do}">ENG</a></li>
+				</ul>
+				<div id="hamburger-button">
+					<img th:src="@{/img/button_menu.png}" id="menu-icon" alt="button_menu">
+				</div>
+			</div>
+			<div id="sidebar">
+		        <ul>
+		            <li><a href="/company-kor.do">기업정보</a></li>
+		            <li><a href="/business-kor.do">사업소개</a></li>
+		            <li><a href="/contact-kor.do">고객지원</a></li>
+		            <li><a href="/recruit-kor.do">채용안내</a></li>
+		        </ul>
+		        <div id="sidebar-lang-box">
+					<ul>
+						<li id="lang-box-on"><a th:href="@{/index-kor.do}">KOR</a></li> 
+						<li> | </li>
+						<li id="lang-box-off"><a th:href="@{/index-eng.do}">ENG</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+                    <a th:href="@{/business-kor.do}"><button type="button" id="none-select-button-business" class="btn btn-secondary custom-btn">사업소개</button></a>
+                </div>
+				<div class="col">
+			      <a th:href="@{/what_is_esc-kor.do}"><button type="button" id="select-button-business" class="btn btn-secondary custom-btn">ESC란</button></a>
+			    </div>
+			</div>
+			</br>
+			ESC란
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/what_is_esc.png}" alt="what_is_esc">
+				</div>
+				<div id="box-right">
+					<p class="title">ESC란</p>
+	
+					<h3>ESC(Electrostatic Chuck) 개요</h3>
+					<hr>
+					<p class="body-text">ESC(Electrostatic Chuck)는 반도체 제조 및 가공 공정에서 사용되는 핵심 부품으로, 웨이퍼를 안정적으로 고정하고 유지하기 위해 정전기 원리를 활용하는 장치입니다.</p>
+					
+					<table class="default-table">
+						<tr>
+							<th>No.</th>
+							<th>명칭</th>
+							<th>설명</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Body<br></td>
+							<td>ESC의 기본적인 구조를 이루는 부분으로, 전체 장치를 안정적으로 지탱하고 있는 중심 부분입니다.</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>히터<br>본딩층</td>
+							<td>히터본딩층은 히터를 바디에 결합시키는 층으로, 히터의 안정적인 부착을 보장합니다.</td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>히터<br></td>
+							<td>히터는 전자장을 생성하여 ESC의 표면을 가열하는 역할을 합니다. 이는 웨이퍼를 안정적으로 고정하고 웨이퍼의 온도를 조절하는 데 사용됩니다.</td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>AL<br>플레이트</td>
+							<td>AL 플레이트는 ESC의 특정 부분으로, 알루미늄(AL)을 활용하여 안정적이고 효율적인 열 전도성을 제공하여 ESC의 성능을 최적화하고 향상시킵니다.</td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>본딩<br></td>
+							<td>본딩은 표면에 다양한 층을 결합하는 과정으로, 결합의 안정성을 제공합니다.</td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>DC<br>전극</td>
+							<td>DC 전극은 전압이 가해질 때 표면에 전하를 발생시키는 부분으로, 웨이퍼를 정전기적으로 고정시키는 데 중요한 역할을 합니다.</td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Plate</td>
+							<td>플레이트는 ESC의 표면을 이루는 부분으로, 웨이퍼가 안정적으로 고정되고 처리되는 영역입니다. 특정한 표면 처리 및 구조를 가지고 있어 반도체 제조 및 가공 과정에서 필수적입니다.</td>
+						</tr>
+					</table>
+					<br>
+					<br>
+					<h3>ESC의 기본 원리</h3>
+					<hr>
+					<p class="body-text">ESC는 두 개의 대전된 금속 판으로 이루어져 있습니다. 이 두 판 간에 전압을 가하면 양극에는 양전하, 음극에는 음전하가 형성됩니다. 이 상태에서 두 평행 판 사이에는 정전력(Electrostatic Force)이 발생하며, 이를 이용하여 웨이퍼를 고정시킵니다.</p>
+					<br>
+					<h3>ESC의 종류</h3>
+					<hr>
+					<p class="body-text">
+					ESC는 다양한 종류로 나누어지며, 이를 구분하는 주요 기준은 주로 사용되는 산업 분야인 LCD(OLED) 및 반도체로 나뉩니다. 그 중에서 Bi-Polar ESC는 반도체 및 LCD(OLED) 분야에서 사용되며, 크기는 150/100mm에서 8.5G까지 다양하게 나타납니다.<br>
+					<table class="default-table">
+						<tr>
+							<th>No.</th>
+							<th>구분</th>
+							<th>설명</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Coating Type ESC</td>
+							<td>코팅 타입 ESC는 표면에 특수 코팅을 하는 형태로, 이러한 코팅은 ESC의 성능과 내구성을 향상시킵니다. 주로 표면 처리 공정에서 사용되며, 강력한 고정력과 내화학적 안정성을 제공합니다.</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Plate Type ESC</td>
+							<td>플레이트 타입 ESC는 플레이트 형태로 제작되어 특정 반도체 산업에서 널리 사용됩니다. 이 형태의 ESC는 특별한 공정에서 필요한 특성을 제공하며, 반도체 제조 중에 웨이퍼를 안정적으로 고정하는 데 사용됩니다.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</section>
+</body>
+</html>

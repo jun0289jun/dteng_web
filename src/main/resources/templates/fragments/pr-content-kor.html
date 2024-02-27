@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+		<div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+			      <a th:href="@{/company-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">기업정보</button></a>
+			    </div>
+				<div class="col">
+					<a th:href="@{/greetings-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">인사말</button></a>
+				</div>
+				<div class="col">
+					<a th:href="@{/history-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">연혁</button></a>
+				</div>
+				<div class="col">
+					<a th:href="@{/pr-kor.do}"><button type="button" id="select-button" class="btn btn-primary custom-btn">PR</button></a>
+				</div>
+				<div class="col">
+					<a th:href="@{/location-kor.do}"><button type="button" id="none-select-button" class="btn btn-primary custom-btn">오시는 길</button></a>
+				</div>
+			</div>
+			</br>
+			PR
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-center"><!-- S : 연혁 헤더 -->
+					<div>
+						<p class="title">(주)동탄이엔지의 Public Relations</p>
+	
+						<h3>인증</h3>
+						<hr>
+						<p class="body-text">(주)동탄이엔지는 품질경영시스템, 환경경영시스템, 안전보건경영시스템을 인증하는 ISO표준을 준수하는 선진기업입니다. </p>
+						
+						<div id="document">
+							<table class="default-table">
+								<tr>
+									<th style="width: 5%;">No.</th>
+									<th style="width: 10%;">구분</th>
+									<th style="width: 10%;">최초 발행일</th>
+									<th style="width: 20%;">내용</th>
+									<th style="width: 55%;">이미지</th>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>ISO 9001<br></td>
+									<td>2017-03-16</td>
+									<td>품질경영시스템인증서</td>
+									<td>
+										<img th:src="@{/img/ISO9001-kor.png}" alt="ISO9001-kor">
+										<img th:src="@{/img/ISO9001-eng.png}" alt="ISO9001-eng">
+									</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>ISO 14001<br></td>
+									<td>2020-05-06</td>
+									<td>환경경영시스템인증서</td>
+									<td>
+										<img th:src="@{/img/ISO14001-kor.png}" alt="ISO14001">
+										<img th:src="@{/img/ISO14001-eng.png}" alt="ISO14001">
+									</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>ISO 45001<br></td>
+									<td>2020-05-06</td>
+									<td>안전보건경영시스템인증서</td>
+									<td>
+										<img th:src="@{/img/ISO45001-kor.png}" alt="ISO45001">
+										<img th:src="@{/img/ISO45001-eng.png}" alt="ISO45001">
+									</td>
+								</tr>
+							</table>
+							<br>
+							<br>
+							<h3>특허</h3>
+							<hr>
+							<p class="body-text">(주)동탄이엔지는 산업을 선도하는 기술력 확보를 위해 끊임없이 노력하고 있습니다. </p>
+							<table class="default-table">
+								<tr>
+									<th style="width: 5%;">No.</th>
+									<th style="width: 10%;">출원번호</th>
+									<th style="width: 10%;">등록일</th>
+									<th style="width: 20%;">발명의 명칭</th>
+									<th style="width: 55%;">이미지</th>
+
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>10-2184705<br></td>
+									<td>2020-11-24</td>
+									<td>정전척의 수리 방법</td>
+									<td>
+										<img th:src="@{/img/patent01.png}" alt="patent01">
+									</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>10-2203859<br></td>
+									<td>2021-01-11</td>
+									<td>절연 저항이 우수한 정전척</td>
+									<td>
+										<img th:src="@{/img/patent02.png}" alt="patent02">
+									</td>
+								</tr>
+								<tr>
+									<td>03</td>
+									<td>10-2230222<br></td>
+									<td>2021-03-15</td>
+									<td>정전척의 접착층 충진 방법</td>
+									<td>
+										<img th:src="@{/img/patent03.png}" alt="patent03">
+									</td>
+								</tr>
+								<tr>
+									<td>04</td>
+									<td>10-2418014<br></td>
+									<td>2022-07-01</td>
+									<td>홀이 구비되는 필름형 본딩층을 포함하는 정전척 및 정전척의 제조 방법</td>
+									<td>
+										<img th:src="@{/img/patent04.png}" alt="patent04">
+									</td>
+								</tr>
+								<tr>
+									<td>05</td>
+									<td>10-2451782<br></td>
+									<td>2022-09-30</td>
+									<td>온도 보상이 가능한 에지링 및 이를 포함하는 기판 처리 장치</td>
+									<td>
+										<img th:src="@{/img/patent05.png}" alt="patent05">
+									</td>
+								</tr>
+								<tr>
+									<td>06</td>
+									<td>10-2485430<br></td>
+									<td>2023-01-02</td>
+									<td>코팅 취약부 개선을 위한 정전척 및 정전척의 제조 방법</td>
+									<td>
+										<img th:src="@{/img/patent06.png}" alt="patent06">
+									</td>
+								</tr>
+								<tr>
+									<td>07</td>
+									<td>10-2507875<br></td>
+									<td>2023-03-03</td>
+									<td>정전척 및 정전척 제조 방법</td>
+									<td>
+										<img th:src="@{/img/patent07.png}" alt="patent07">
+									</td>
+								</tr>
+								<tr>
+									<td>08</td>
+									<td>10-2592339<br></td>
+									<td>2023-10-17</td>
+									<td>다공성 필터가 구비되는 정전척의 제조 방법</td>
+									<td>
+										<img th:src="@{/img/patent08.png}" alt="patent08">
+									</td>
+								</tr>
+								<tr>
+									<td>09</td>
+									<td>10-2592334<br></td>
+									<td>2023-10-17</td>
+									<td>정전척용 흡착 플레이트 및 그의 제조 방법</td>
+									<td>
+										<img th:src="@{/img/patent09.png}" alt="patent09">
+									</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>10-2592338<br></td>
+									<td>2023-10-17</td>
+									<td>일체형 다공성 필터를 포함하는 정전척 및 이의 제조 방법</td>
+									<td>
+										<img th:src="@{/img/patent10.png}" alt="patent10">
+									</td>
+								</tr>
+							</table>
+							<br>
+							<br>
+							<h3>수상내용</h3>
+							<hr>
+							<p class="body-text">
+							(주)동탄이엔지의 주요 수상 내용입니다. <br>
+							<table class="default-table">
+								<tr>
+									<th style="width: 5%;">No.</th>
+									<th style="width: 20%;">수상명</th>
+									<th style="width: 20%;">수상일</th>
+									<th style="width: 55%;">이미지</th>
+								</tr>
+								<tr>
+									<td>01</td>
+									<td>오백만불 수출의 탑<br></td>
+									<td>2019-12-05 </td>
+									<td>
+										<img th:src="@{/img/5million.png}" alt="5million">
+									</td>
+								</tr>
+								<tr>
+									<td>02</td>
+									<td>천만불 수출의 탑<br></td>
+									<td>2022-12-05</td>
+									<td>
+										<img th:src="@{/img/10million.png}" alt="10million">
+									</td>
+								</tr>
+							</table>
+							<br>
+							<br>
+							<h3>채용연계</h3>
+							<hr>
+							<p class="body-text">
+							(주)동탄이엔지는 청년에게 고용창출의 기회를 제공하고 직무 전문성을 갖춘 인재를 적극적으로 채용하고자 지역사회 및 교육기관과의 협력을 통해 채용 연계 사업을 추진하고 있습니다.<br>
+							<div id="recruitment-link">
+								<img th:src="@{/img/recruitment-link.png}" alt="recruitment-link.png">
+							</div>
+						</div>					
+					</div>
+					<hr>
+				</div>
+			</div>
+	</section>
+</body>
+</html>

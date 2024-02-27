@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+                    <a th:href="@{/business-eng.do}"><button type="button" id="none-select-button-business" class="btn btn-secondary custom-btn">Business</button></a>
+                </div>
+				<div class="col">
+			      <a th:href="@{/what_is_esc-eng.do}"><button type="button" id="select-button-business" class="btn btn-secondary custom-btn">What is ESC</button></a>
+			    </div>
+			</div>
+			<br>
+			<h2>What is ESC</h2>
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/what_is_esc.png}" alt="what_is_esc">
+				</div>
+				<div id="box-right">
+					<p class="title">What is ESC</p>
+	
+					<h3>Overview of ESC (Electrostatic Chuck)</h3>
+					<hr>
+					<p class="body-text">ESC (Electrostatic Chuck) is a crucial component used in semiconductor manufacturing and processing. It utilizes the principles of electrostatics to securely hold and maintain wafers in place.</p>
+					
+					<table class="default-table">
+						<tr>
+							<th>No.</th>
+							<th>Name</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Body</td>
+							<td>The body forms the basic structure of the ESC, providing stability to the entire device.</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Heater Bonding Layer</td>
+							<td>The heater bonding layer ensures the stable attachment of the heater to the body.</td>
+						</tr>
+						<tr>
+							<td>03</td>
+							<td>Heater</td>
+							<td>The heater generates an electromagnetic field to heat the surface of the ESC, stabilizing wafer fixation and temperature control.</td>
+						</tr>
+						<tr>
+							<td>04</td>
+							<td>Al Plate</td>
+							<td>The AL Plate is a specific component of the ESC that utilizes aluminum (AL) to provide stable and efficient heat conductivity, optimizing and enhancing the performance of the ESC.</td>
+						</tr>
+						<tr>
+							<td>05</td>
+							<td>Bonding</td>
+							<td>Bonding is a process of combining various layers on the surface, providing stability to the bond.</td>
+						</tr>
+						<tr>
+							<td>06</td>
+							<td>DC Electrode</td>
+							<td>The DC electrode generates charges on the surface when voltage is applied, crucial for electrostatic fixation of the wafer.</td>
+						</tr>
+						<tr>
+							<td>07</td>
+							<td>Plate</td>
+							<td>The plate forms the surface of the ESC, where the wafer is stably fixed and processed. It is essential in semiconductor manufacturing and processing due to its specific surface treatment and structure.</td>
+						</tr>
+					</table>
+					<br>
+					<br>
+					<h3>Basic Principles of ESC</h3>
+					<hr>
+					<p class="body-text">ESC is composed of two opposing metal plates. When voltage is applied, positive and negative charges are formed on these plates. In this state, electrostatic force occurs between the two parallel plates, allowing the wafer to be fixed.</p>
+					<br>
+					<h3>Types of ESC</h3>
+					<hr>
+					<p class="body-text">
+					ESC is categorized into various types based on the industries primarily using them, such as LCD (OLED) and semiconductor. Among them, Bi-Polar ESC is used in both semiconductor and LCD (OLED) fields, with sizes ranging from 150/100mm to 8.5G.<br>
+					<table class="default-table">
+						<tr>
+							<th>No.</th>
+							<th>Classification</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>Coating Type ESC</td>
+							<td>Coating Type ESC involves applying a special coating to the surface. This coating enhances the performance and durability of the ESC, commonly used in surface treatment processes, providing strong adhesion and chemical stability.</td>
+						</tr>
+						<tr>
+							<td>02</td>
+							<td>Plate Type ESC</td>
+							<td>Plate Type ESC is manufactured in a plate form and widely used in specific semiconductor industries. This ESC type offers characteristics necessary for special processes and is used to stably fix wafers during semiconductor manufacturing.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</section>
+</body>
+</html>

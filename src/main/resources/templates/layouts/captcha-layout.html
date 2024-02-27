@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Default Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 추가적인 head 섹션 내용 -->
+    <link rel="stylesheet" th:href="@{/css/captcha.css}"/>
+    <link rel="stylesheet" th:href="@{/css/history.css}"/>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    <script th:src="@{/js/bootstrap.bundle.js}" defer></script>
+    <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+    <script th:src="@{/js/script.js}" defer></script>
+</head>
+<body>
+	<section th:if="${title == 'CaptchaImageLoadKOR'}">
+	    <div th:include="fragments/captcha-content-kor :: section"></div>
+	</section>
+	<section th:if="${title == 'CaptchaImageLoadENG'}">
+	    <div th:include="fragments/captcha-content-eng :: section"></div>
+	</section>
+</body>
+</html>

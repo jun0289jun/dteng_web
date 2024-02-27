@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+			      <a th:href="@{/company-kor.do}"><button type="button" id="select-button" class="btn btn-secondary custom-btn">기업정보</button></a>
+			    </div>
+				<div class="col">
+			      <a th:href="@{/greetings-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">인사말</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/history-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">연혁</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/pr-kor.do}"><button type="button" id="none-select-button" class="btn btn-primary custom-btn">PR</button></a>
+			    </div>
+			    <div class="col">
+			      <a th:href="@{/location-kor.do}"><button type="button" id="none-select-button" class="btn btn-primary custom-btn">오시는 길</button></a>
+			    </div>
+			</div>
+			</br>
+			기업정보
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/company_img.png}" alt="company_img">
+				</div>
+				<div id="box-right">
+					<p class="title">(주)동탄이엔지</p>
+	
+						<h3>업력 9년차 | 매출액 312억 769만원</h3>
+						<hr>
+						<p class="body-text">
+							설립 : 2016년 7월 6일<br> 
+							대표자명 : 고광노<br> 
+							업종 : 반도체 제조용 기계 제조업<br>
+							사업내용 : 반도체장비부품,액정표시장치,절연제품,전자제품 제조<br>
+							보유기술 : <br>
+							특허권 - 절연 저항이 우수한 정전척(2021)<br>
+							특허권 - 정전척의 수리방법(2020)<br>
+							특허권 - 홀이 구비되는 필름형 본딩층을 포함하는 정전척및 정전척의 제조방법(2022)<br>
+							특허권 - 정전척의 접착층 충진방법(2021)<br>
+							ISO9001 - 반도체 장비 부품(웨이퍼용 정전척)의 생산<br>
+						</p>
+				</div>
+			</div>
+	</section>
+</body>
+</html>

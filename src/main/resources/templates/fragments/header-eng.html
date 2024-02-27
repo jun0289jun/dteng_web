@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+    <header>
+        <div id="header">
+			<div id="logo-box">
+				<a th:href="@{/index-eng.do}"><img th:src="@{/img/DTENG_LOGO(1500px).png}" alt="logo"></a>
+			</div>
+			<div id="nav-box">
+				<ul>
+					<li><a th:href="@{/company-eng.do}">Company</a></li>
+					<li><a th:href="@{/business-eng.do}">Business</a></li>
+					<li><a th:href="@{/contact-eng.do}">Contact</a></li>
+					<li><a th:href="@{/recruit-eng.do}">Recruit</a></li>
+				</ul>
+			</div>
+			<div id="lang-box">
+				<ul>
+					<li id="lang-box-off"><a th:href="@{/index-kor.do}">KOR</a></li> 
+					<li> | </li>
+					<li id="lang-box-on"><a th:href="@{/index-eng.do}">ENG</a></li>
+				</ul>
+				<div id="hamburger-button">
+					<img th:src="@{/img/button_menu.png}" id="menu-icon" alt="button_menu">
+				</div>
+			</div>
+			<div id="sidebar">
+		        <ul>
+		            <li><a href="/company-eng.do">Company</a></li>
+		            <li><a href="/business-eng.do">Business</a></li>
+		            <li><a href="/contact-eng.do">Contact</a></li>
+		            <li><a href="/recruit-eng.do">Recruit</a></li>
+		        </ul>
+		        <div id="sidebar-lang-box">
+					<ul>
+						<li id="lang-box-off"><a th:href="@{/index-kor.do}">KOR</a></li> 
+						<li> | </li>
+						<li id="lang-box-on"><a th:href="@{/index-eng.do}">ENG</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+	<section>
+		<div th:if="${result == 'Success'}">
+			<script th:inline="javascript">
+				/* Thymeleaf에서 서버에서 전달한 변수를 사용하여 알림 표시 */
+				alert('Mail sent successfully.');
+			</script>
+		</div>
+		<div th:if="${result == 'Error'}">
+			<script th:inline="javascript">
+				/* Thymeleaf에서 서버에서 전달한 변수를 사용하여 알림 표시 */
+				alert('Failed to send mail.');
+			</script>
+		</div>
+		<div th:if="${result == 'Fail'}">
+			<script th:inline="javascript">
+				/* Thymeleaf에서 서버에서 전달한 변수를 사용하여 알림 표시 */
+				alert('Incorrect captcha code.');
+			</script>
+		</div>
+		<div id="content-section">
+			</br>
+			Customer Support
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/contact.png}" alt="contact">
+				</div>
+				<div id="box-right">
+					<p class="title">"We will be with you from the customer's perspective."</p>
+					<h3>DT ENG INC. always considers our customers.</h3>
+					<p class="body-text">TEL : (+82) 031-8058-0411 | ADDRESS: (18487) 814, Dongbu-daero, Hwaseong-si, Gyeonggi-do, Republic of Korea</p>
+					<hr>
+					<div>
+						<form th:action="@{/send-email.do}" method="post">
+							<table border="0;" style="width: 100%;">
+								<tr>
+									<td colspan="3">
+										<label for="name">Name *</label><br>
+										<input class="input1" type="text" name="name" placeholder="Enter your name." required><br>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="email">Email Address *</label><br>
+										<input class="input2" type="text" id="account" name="account"
+											placeholder="Enter your email account." required>
+									</td>
+									<td>
+										<br>
+										<input class="input2" type="text" id="domain" name="domain" required>
+									</td>
+									<td>
+										<br>
+										<select id="domainDropdown" name="domainDropdown" required>
+											<option id="directInputOption" value="directInput">Direct Input</option>
+											<option value="naver.com">naver.com</option>
+											<option value="nate.com">nate.com</option>
+											<option value="gmail.com">gmail.com</option>
+											<option value="yahoo.com">yahoo.com</option>
+											<option value="hanmail.net">hanmail.net</option>
+											<!-- Add other email options -->
+					
+											<!-- Direct Input Option -->
+					
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="contact">Contact *</label><br>
+										<input class="input2" type="number" id="contact" name="contact1" required />
+									</td>
+									<td>
+										<br>
+										<input class="input2" type="number" id="contact" name="contact2" required />
+									</td>
+									<td>
+										<br>
+										<input class="input1" type="number" id="contact" name="contact3" required />
+									</td>
+								</tr>
+							</table>
+							<br>
+							<br>
+					
+							<label for="message">Inquiry *</label><br>
+							<textarea id="message" name="message" rows="15" cols="50" placeholder="Enter your inquiry here.
+					        &#10;
+					        &#10;[Notice of Collection and Use of Personal Information]
+					        &#10; DT ENG INC. collects and uses the following personal information to proceed with inquiries.
+					        &#10; *Collected items - Name, Email, Contact
+					        &#10; - Name, Email, and Contact are required items, please fill out the form.
+					        &#10; *Purpose of use - Responding to inquiries and providing promotional materials
+					        &#10; - it will not be used for any other purposes but inquiries.
+					        &#10; *Period of use/storage - Customers can refuse to agree, upon refusal of agreement, and if they refuse, the inquiry service cannot be used.
+					        &#10; - The collected personal information is kept until the customer requests destruction, and is destroyed immediately upon request.
+					        " required></textarea><br>
+							<input type="checkbox" id="subscribe" name="subscribe" required /> I agree to the collection and use of personal
+							information.<br><br>
+					
+							<!-- Naver Captcha Area -->
+							<label for="captcha" style="display:block">Anti-Spam Code*</label>
+							<div id="captcha-container">
+								<div id="captcha-img" style="text-align: center; background-color: #DDDDDD;">
+									<iframe th:src="@{/captcha-image-load-eng.do}" width="300px" , height=170px>
+										<p>Your browser does not support iframes.</p>
+									</iframe>
+								</div>
+								<div id="captcha-code">
+									<input class="input1" type="text" id="user_value" name="user_value"
+										placeholder="Enter the anti-spam code." style="display:block" required />
+								</div>
+							</div>
+					
+							<hr>
+							<input type="hidden" name="lang" value="eng">
+							<input id="select-button" type="submit" value="Send">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

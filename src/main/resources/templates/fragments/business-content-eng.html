@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+                    <a th:href="@{/business-eng.do}"><button type="button" id="select-button-business" class="btn btn-secondary custom-btn">Business Introduction</button></a>
+                </div>
+				<div class="col">
+					<a th:href="@{/what_is_esc-eng.do}"><button type="button" id="none-select-button-business"class="btn btn-secondary custom-btn">What is ESC</button></a>
+				</div>
+			</div>
+			</br>
+			Business Introduction
+			<hr class="my-4">
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/business-process-eng.png}" alt="business-process">
+				</div>
+				<div id="box-right">
+					<p class="title">ESC(Electrostatic Chuck) Repair</p>
+				
+					<h3>Heater bonding | Plate De-bonding</h3>
+					<hr>
+					<p class="body-text">DT ENG INC. performs a systematic operational process based on a total of 20 detailed steps outlined in the standard operating procedure. This is the schematized repair standard process derived from the operational manual.</p>
+					<table class="align-center-table">
+						<tr>
+							<th>Process No.</th>
+							<th>Plate Type</th>
+							<th>Coating Type</th>
+						</tr>
+						<tr>
+							<td>Step 0</td>
+							<td colspan="2"><b>Product Reception :</b> Confirmation of incoming products</td>
+						</tr>
+						<tr>
+							<td>Step 1</td>
+							<td colspan="2"><b>Analysis and Evaluation of Damage / Plate Type Determination : </b>Analysis and evaluation of product damage, planning process based on Plate Type</td>
+						</tr>
+						<tr>
+							<td>Step 2</td>
+							<td><b>Plate De-bonding : </b>Release of bonding joints</td>
+							<td><b>Coating Stripping : </b>Progression of existing coating stripping</td>
+				
+						</tr>
+						<tr>
+							<td>Step 3</td>
+							<td><b>Plate Bonding : </b>Bonding of plate joints</td>
+							<td><b>ESC (Emergency Stop Circuit) Coating : </b>Application of new ESC coating</td>
+						</tr>
+						<tr>
+							<td>Step 4</td>
+							<td colspan="2"><b>Processing :</b> Establishing optimal process conditions through processing</td>
+						</tr>
+						<tr>
+							<td>Step 5</td>
+							<td colspan="2"><b>Pattern Formation :</b> Formation of functional patterns of the electrostatic chuck</td>
+						</tr>
+						<tr>
+							<td>Step 6</td>
+							<td colspan="2"><b>Product Cleaning :</b> Removal of impurities or foreign substances</td>
+						</tr>
+						<tr>
+							<td>Step 7</td>
+							<td colspan="2"><b>Verification and Evaluation of Product :</b> Verification of quality and checking compliance with standards</td>
+						</tr>
+						<tr>
+							<td>Step 8</td>
+							<td colspan="2"><b>Product Packaging :</b> Packaging of finished products</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</section>
+</body>
+</html>

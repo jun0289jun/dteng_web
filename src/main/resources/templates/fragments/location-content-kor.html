@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+	<section>
+	    <div id="content-section">
+			<div class="row custom-row row-cols-auto">
+				<div class="col">
+			      <a th:href="@{/company-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">기업정보</button></a>
+			    </div>
+				<div class="col custom-btn">
+			      <a th:href="@{/greetings-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">인사말</button></a>
+			    </div>
+			    <div class="col custom-btn">
+			      <a th:href="@{/history-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">연혁</button></a>
+			    </div>
+			    <div class="col custom-btn">
+			      <a th:href="@{/pr-kor.do}"><button type="button" id="none-select-button" class="btn btn-secondary custom-btn">PR</button></a>
+			    </div>
+			    <div class="col custom-btn">
+			      <a th:href="@{/location-kor.do}"><button type="button" id="select-button" class="btn btn-primary custom-btn">오시는 길</button></a>
+			    </div>
+			</div>
+			</br>
+            오시는 길
+            <hr class="my-4">
+            <div id="box-center"><!-- S : 연혁 헤더 -->
+			<div>
+				<p class="title">본사</p>
+				<h3>주소 : (18487) 경기 화성시 동부대로 814</h3>
+				<p class="body-text">TEL: 031-768-8847 / FAX: 031-8058-0422</p>
+			</div>
+			<hr>
+			<div id="box-container">
+				<div id="box-left">
+					<img th:src="@{/img/company_img.png}" alt="location">
+				</div>
+				<div id="box-right">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.118314277666!2d127.084924077136!3d37.17365914655695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b466368d4c387%3A0x5496eca9912fca25!2sDTENG!5e0!3m2!1sko!2skr!4v1707376320665!5m2!1sko!2skr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<hr>
+		</div>
+	</section>
+</body>
+</html>
