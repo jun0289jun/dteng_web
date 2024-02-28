@@ -20,7 +20,7 @@ a {
 
 #history h2 {
 	text-align: center;
-	font-size: 24px;
+	font-size: 40px;
 	color: #444;
 	line-height: 1;
 	margin-top: 30px;
@@ -89,7 +89,7 @@ a {
 	width: 10%;
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 14px;
+	font-size: 20px;
 	color: #444;
 	font-weight: bold;
 	text-align: left;
@@ -99,7 +99,7 @@ a {
 	width: 90px;
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 13px;
+	font-size: 20px;
 	color: #444;
 	text-align: left;
 }
@@ -168,7 +168,7 @@ a {
 	width: 10%;
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 14px;
+	font-size: 20px;
 	color: #444;
 	font-weight: bold;
 	text-align: right;
@@ -178,7 +178,7 @@ a {
 	width: 90px;
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 13px;
+	font-size: 20px;
 	color: #444;
 	text-align: right;
 }
@@ -187,17 +187,17 @@ a {
 /* 태블릿 화면 */
 @media screen and (max-width: 880px) {
     .list_right dl dt {
-		font-size: 12px;
+		font-size: 15px;
 	}
 	
 	.list_right dl dd {
-		font-size: 11px;
+		font-size: 14px;
 	}
     .list_left dl dt {
-		font-size: 12px;
+		font-size: 15px;
 	}
 	
 	.list_left dl dd {
-		font-size: 11px;
+		font-size: 14px;
 	}
 }
