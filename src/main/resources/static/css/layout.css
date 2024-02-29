@@ -518,7 +518,13 @@ img {
 }
 
 #document img {
-	width: 350px !important;
+	width: 200px !important;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#patent img {
+	width: 200px !important;
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -694,6 +700,17 @@ select {
   background-color: #e0e0e0;
 }
 
+/* 모니터 화면 1520 */
+@media screen and (max-width: 1520px) {
+	#document img {
+		width: 170px !important;
+	}
+	
+	#patent img {
+		width: 170px !important;
+	}
+}
+
 
 /* 미디어 쿼리 */
 /* 모니터 화면 1440 */
@@ -718,10 +735,24 @@ select {
 		font-size: 20px;
 	}
 	#document img {
-		width: 250px !important;
+		width: 150px !important;
 	}
 	#recruitment-link img {
 		width: 100% !important;
+	}
+}
+
+/* 모니터 화면 1330 */
+@media screen and (max-width: 1330px) {
+	#patent img {
+		width: 130px !important;
+	}
+}
+
+/* 모니터 화면 1070 */
+@media screen and (max-width: 1070px) {
+	#patent img {
+		width: 100px !important;
 	}
 }
 
@@ -736,7 +767,7 @@ select {
 	}
 	
 	#document img {
-		width: 150px !important;
+		width: 130px !important;
 	}
 	
 	#recruitment-link img {
@@ -778,8 +809,19 @@ select {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+	#patent img {
+		width: 80px !important;
+	}
 }
 
+/* 모니터 화면 750 */
+@media screen and (max-width: 750px) {
+	#patent img {
+		width: 100% !important;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
 
 /* 태블릿 화면 */
 @media screen and (max-width: 600px) {
