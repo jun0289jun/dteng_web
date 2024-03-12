@@ -38,6 +38,13 @@ public class MainController {
 //		return viewName;
 //	}
 	
+	// /robots.txt경로 연결
+	@RequestMapping(value = "/robots.txt", method = RequestMethod.GET)
+    public String robotsTxt() {
+        return "User-agent: * Disallow: / Allow: /$";
+    }
+	
+	
 	// /경로 연결
 	@RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView linkIndexPageKOR() {
