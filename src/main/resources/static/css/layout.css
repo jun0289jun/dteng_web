@@ -20,7 +20,7 @@ a:active {
 }
 
 h3 {
-	color: #578BBB;
+	color: #13335A;
 	font-weight: bold;
 }
 
@@ -418,7 +418,7 @@ img {
 	top: 50%;
 	left:100px;
 	transform: translate(-50%, -50%);/* 요소를 지정한 X 및 Y 좌표만큼 이동 */
-	color: #578BBB;
+	color: #13335A;
 	font-size: 22px;
 	font-weight: bold;
 	text-align: left;
@@ -440,7 +440,7 @@ img {
 	padding-bottom: 80px;/* footer로 인해 가려지는것을 방지하기 위함 */
 	padding-left: 50px;
 	padding-right: 50px;
-	/*background-color: #578BBB;	*/
+	/*background-color: #13335A;	*/
 }
 
 #content-section hr { 
@@ -454,7 +454,7 @@ img {
 	height: 35px;
 	font-weight: bold;
 	color: #FFFFFF;
-	background-color: #578BBB;
+	background-color: #13335A;
 	border: 0;
 }
 
@@ -478,7 +478,7 @@ img {
 	height: 35px;
 	font-weight: bold;
 	color: #FFFFFF;
-	background-color: #578BBB;
+	background-color: #13335A;
 	border: 0;
 }
 
@@ -584,7 +584,7 @@ img {
 	font-size: 14px;
 	font-weight: bold;
 	color: #FFFFFF;
-	background-color: #578BBB;
+	background-color: #13335A;
 	border: 0;
 	transition: background-color 0.6s ease;
 }
