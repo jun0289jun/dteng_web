@@ -523,7 +523,7 @@ img {
 	padding-right: 10px;
 }
 
-#patent img {
+#table_img img {
 	width: 200px !important;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -706,7 +706,7 @@ select {
 		width: 170px !important;
 	}
 	
-	#patent img {
+	#table_img img {
 		width: 170px !important;
 	}
 }
@@ -744,14 +744,14 @@ select {
 
 /* 모니터 화면 1330 */
 @media screen and (max-width: 1330px) {
-	#patent img {
+	#table_img img {
 		width: 130px !important;
 	}
 }
 
 /* 모니터 화면 1070 */
 @media screen and (max-width: 1070px) {
-	#patent img {
+	#table_img img {
 		width: 100px !important;
 	}
 }
@@ -809,14 +809,14 @@ select {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	#patent img {
+	#table_img img {
 		width: 80px !important;
 	}
 }
 
 /* 모니터 화면 750 */
 @media screen and (max-width: 750px) {
-	#patent img {
+	#table_img img {
 		width: 100% !important;
 		padding-left: 5px;
 		padding-right: 5px;
